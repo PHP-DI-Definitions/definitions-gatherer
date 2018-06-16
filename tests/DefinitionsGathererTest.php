@@ -3,16 +3,16 @@
 namespace PHPDIDefinitions;
 
 use PHPUnit\Framework\TestCase;
-use React\EventLoop\LoopInterface;
 
 final class DefinitionsGathererTest extends TestCase
 {
-    public function testEventLoop()
+    public function testDummy()
     {
         $definitions = iterator_to_array(DefinitionsGatherer::gather());
 
         self::assertCount(1, $definitions);
-        self::assertTrue(isset($definitions[LoopInterface::class]));
-        self::assertInternalType('callable', $definitions[LoopInterface::class]);
+        self::assertTrue(isset($definitions[Dummy::class]));
+        self::assertInternalType('callable', $definitions[Dummy::class]);
+        self::assertInstanceOf(Dummy::class, $definitions[Dummy::class]());
     }
 }

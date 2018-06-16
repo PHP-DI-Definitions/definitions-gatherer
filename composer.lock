@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "01ad77b61383e7d77bd97d4603246595",
+    "content-hash": "9561542979e8d04613a62bbe84aefa7e",
     "packages": [
         {
             "name": "igorw/get-in",
@@ -99,6 +99,69 @@
                 "package"
             ],
             "time": "2015-07-16T22:30:20+00:00"
+        },
+        {
+            "name": "php-di-definitions/dummy",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI-Definitions/dummy.git",
+                "reference": "3ff49d93c87bb5fceb38902e26f4d453ea13ea4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/3ff49d93c87bb5fceb38902e26f4d453ea13ea4c",
+                "reference": "3ff49d93c87bb5fceb38902e26f4d453ea13ea4c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^4.3"
+            },
+            "type": "library",
+            "extra": {
+                "php-di-definitions": {
+                    "di": [
+                        "src/dummy.php"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PHPDIDefinitions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2018-06-15T15:48:34+00:00"
+        },
+        {
+            "name": "wyrihaximus/get-in-packages-composer.jason",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WyriHaximus/php-get-in-packages-composer.json.git",
+                "reference": "fc37b24f0b1c24ffaae91a1fb6903d10c728f8aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WyriHaximus/php-get-in-packages-composer.json/zipball/fc37b24f0b1c24ffaae91a1fb6903d10c728f8aa",
+                "reference": "fc37b24f0b1c24ffaae91a1fb6903d10c728f8aa",
+                "shasum": ""
+            },
+            "require": {
+                "igorw/get-in": "^1.0",
+                "joshdifabio/composed": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2018-06-14T20:31:04+00:00"
         }
     ],
     "packages-dev": [
@@ -1474,38 +1537,6 @@
                 "diff"
             ],
             "time": "2018-02-15T16:58:55+00:00"
-        },
-        {
-            "name": "php-di-definitions/react-event-loop",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PHP-DI-Definitions/reactphp-event-loop.git",
-                "reference": "090964077585b49a0eb897683c3c506daf276ac6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/reactphp-event-loop/zipball/090964077585b49a0eb897683c3c506daf276ac6",
-                "reference": "090964077585b49a0eb897683c3c506daf276ac6",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1",
-                "react/event-loop": "^1.0 || ^0.5"
-            },
-            "require-dev": {
-                "api-clients/test-utilities": "^4.3"
-            },
-            "type": "library",
-            "extra": {
-                "php-di-definitions": {
-                    "di": [
-                        "src/event-loop.php"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-05-12T16:19:40+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -3722,15 +3753,16 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "php-di-definitions/react-event-loop": 20
+        "php-di-definitions/dummy": 20,
+        "wyrihaximus/get-in-packages-composer.jason": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1"
+        "php": "^7.2"
     },
     "platform-dev": [],
     "platform-overrides": {
-        "php": "7.1"
+        "php": "7.2"
     }
 }

@@ -2,44 +2,16 @@
 
 namespace PHPDIDefinitions;
 
-use Composed\Package;
-use function Composed\packages;
-use function igorw\get_in;
+use function WyriHaximus\get_in_packages_composer_path;
 
 final class DefinitionsGatherer
 {
-    private const LOCATION = 'php-di-definitions.di';
+    private const LOCATION = 'extra.php-di-definitions.di';
 
     public static function gather(string $location = self::LOCATION): iterable
     {
-        $location = explode('.', $location);
-        foreach (self::locations($location) as $file) {
+        foreach (get_in_packages_composer_path($location) as $file) {
             yield from require $file;
-        }
-    }
-
-    public static function locations(array $location): iterable
-    {
-        /** @var Package $package */
-        foreach (packages(true) as $package) {
-            $config = $package->getConfig('extra');
-
-            if ($config === null) {
-                continue;
-            }
-
-            $entries = get_in(
-                $config,
-                $location
-            );
-
-            if ($entries === null) {
-                continue;
-            }
-
-            foreach ($entries as $file) {
-                yield $package->getPath($file);
-            }
         }
     }
 }
