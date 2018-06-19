@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9561542979e8d04613a62bbe84aefa7e",
+    "content-hash": "a6f075145a8c5686289a4b50ce4dbf29",
     "packages": [
         {
             "name": "igorw/get-in",
@@ -138,21 +138,25 @@
         },
         {
             "name": "wyrihaximus/get-in-packages-composer.jason",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-get-in-packages-composer.json.git",
-                "reference": "fc37b24f0b1c24ffaae91a1fb6903d10c728f8aa"
+                "reference": "5d42230dcacd8f30c2d5cb3dc9ed0fafb79aaaa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-get-in-packages-composer.json/zipball/fc37b24f0b1c24ffaae91a1fb6903d10c728f8aa",
-                "reference": "fc37b24f0b1c24ffaae91a1fb6903d10c728f8aa",
+                "url": "https://api.github.com/repos/WyriHaximus/php-get-in-packages-composer.json/zipball/5d42230dcacd8f30c2d5cb3dc9ed0fafb79aaaa8",
+                "reference": "5d42230dcacd8f30c2d5cb3dc9ed0fafb79aaaa8",
                 "shasum": ""
             },
             "require": {
                 "igorw/get-in": "^1.0",
-                "joshdifabio/composed": "^1.0"
+                "joshdifabio/composed": "^1.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "api-clients/test-utilities": "^5.0"
             },
             "type": "library",
             "autoload": {
@@ -161,7 +165,18 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-06-14T20:31:04+00:00"
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com",
+                    "homepage": "http://wyrihaximus.net/"
+                }
+            ],
+            "description": "Functions around joshdifabio/composed and igorw/get-in to gather configuration from composer.json",
+            "time": "2018-06-19T20:43:13+00:00"
         }
     ],
     "packages-dev": [
@@ -3753,8 +3768,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "php-di-definitions/dummy": 20,
-        "wyrihaximus/get-in-packages-composer.jason": 20
+        "php-di-definitions/dummy": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
