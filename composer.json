@@ -14,7 +14,7 @@
     "wyrihaximus/get-in-packages-composer.jason": "^1.0"
   },
   "require-dev": {
-    "api-clients/test-utilities": "^4.3"
+    "api-clients/test-utilities": "^5.0"
   },
   "autoload": {
     "psr-4": {
