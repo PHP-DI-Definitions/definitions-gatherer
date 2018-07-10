@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": "^7.2",
-    "php-di-definitions/dummy": "dev-master",
+    "php-di-definitions/dummy": "^1.0",
     "wyrihaximus/get-in-packages-composer.jason": "^1.0"
   },
   "require-dev": {

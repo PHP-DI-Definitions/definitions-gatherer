@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6f075145a8c5686289a4b50ce4dbf29",
+    "content-hash": "26a2c10771af492d341d111aa5b6edf8",
     "packages": [
         {
             "name": "igorw/get-in",
@@ -102,29 +102,29 @@
         },
         {
             "name": "php-di-definitions/dummy",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/dummy.git",
-                "reference": "3ff49d93c87bb5fceb38902e26f4d453ea13ea4c"
+                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/3ff49d93c87bb5fceb38902e26f4d453ea13ea4c",
-                "reference": "3ff49d93c87bb5fceb38902e26f4d453ea13ea4c",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/e5e85f2796b6aebd94ae350b315220d7141ae3a7",
+                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^4.3"
+                "api-clients/test-utilities": "^5.0"
             },
             "type": "library",
             "extra": {
                 "php-di-definitions": {
                     "di": [
-                        "src/dummy.php"
+                        "etc/di/dummy.php"
                     ]
                 }
             },
@@ -134,7 +134,17 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "time": "2018-06-15T15:48:34+00:00"
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
+            "description": "Dummy definition for testing",
+            "time": "2018-07-10T06:18:55+00:00"
         },
         {
             "name": "wyrihaximus/get-in-packages-composer.jason",
@@ -3767,9 +3777,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "php-di-definitions/dummy": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
