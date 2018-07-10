@@ -1,6 +1,6 @@
 {
   "name": "php-di-definitions/definitions-gatherer",
-  "description": "Async first Pusher client",
+  "description": "Collect definition files from composer.json's",
   "license": "MIT",
   "authors": [
     {
