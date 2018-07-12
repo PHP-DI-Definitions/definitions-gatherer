@@ -9,9 +9,10 @@ cache:
 matrix:
   include:
     - php: 7.2
-    - php: nightly
       env:
         - qaExtended=true
+    - php: nightly
+      env:
         - dropPlatform=false
     - php: 7.2
       env:
