@@ -1,6 +1,6 @@
 # Definitions gatherer
 
-[![Build Status](https://travis-ci.com/php-di-definitions/definitions-gatherer.svg?branch=master)](https://travis-ci.com/php-di-definitions/definitions-gatherer)
+[![Build Status](https://travis-ci.com/PHP-DI-Definitions/definitions-gatherer.svg?branch=master)](https://travis-ci.com/PHP-DI-Definitions/definitions-gatherer)
 [![Latest Stable Version](https://poser.pugx.org/php-di-definitions/definitions-gatherer/v/stable.png)](https://packagist.org/packages/php-di-definitions/definitions-gatherer)
 [![Total Downloads](https://poser.pugx.org/php-di-definitions/definitions-gatherer/downloads.png)](https://packagist.org/packages/php-di-definitions/definitions-gatherer)
 [![Code Coverage](https://scrutinizer-ci.com/g/php-di-definitions/definitions-gatherer/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/php-di-definitions/definitions-gatherer/?branch=master)
