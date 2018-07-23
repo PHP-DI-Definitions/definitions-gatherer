@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5804de145346c87f51fc7f25f5de289d",
@@ -103,16 +103,16 @@
         },
         {
             "name": "php-di-definitions/dummy",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/dummy.git",
-                "reference": "396f4cb37fbf7ca9087c34efed9492a84b648e72"
+                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/396f4cb37fbf7ca9087c34efed9492a84b648e72",
-                "reference": "396f4cb37fbf7ca9087c34efed9492a84b648e72",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/e5e85f2796b6aebd94ae350b315220d7141ae3a7",
+                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7",
                 "shasum": ""
             },
             "require": {
@@ -135,8 +135,17 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cees-Jan Kiewiet",
+                    "email": "ceesjank@gmail.com"
+                }
+            ],
             "description": "Dummy definition for testing",
-            "time": "2018-07-10T00:51:51+00:00"
+            "time": "2018-07-10T06:18:55+00:00"
         },
         {
             "name": "wyrihaximus/get-in-packages-composer.jason",
@@ -3534,7 +3543,7 @@
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
-    "prefer-lowest": true,
+    "prefer-lowest": false,
     "platform": {
         "php": "^7.2"
     },
