@@ -4,11 +4,14 @@ namespace PHPDIDefinitions;
 
 use PHPUnit\Framework\TestCase;
 
+/**
+ * @internal
+ */
 final class DefinitionsGathererTest extends TestCase
 {
-    public function testDummy()
+    public function testDummy(): void
     {
-        $definitions = iterator_to_array(DefinitionsGatherer::gather());
+        $definitions = \iterator_to_array(DefinitionsGatherer::gather());
 
         self::assertCount(1, $definitions);
         self::assertTrue(isset($definitions[Dummy::class]));
