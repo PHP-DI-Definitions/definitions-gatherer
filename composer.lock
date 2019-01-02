@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "igorw/get-in",
-            "version": "v1.0.0",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/igorw/get-in.git",
-                "reference": "ba9ab6e41d0819db138d52f6431587f56698f121"
+                "reference": "170ded831f49abc6a6061f655aba9bdbcf7b8111"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/igorw/get-in/zipball/ba9ab6e41d0819db138d52f6431587f56698f121",
-                "reference": "ba9ab6e41d0819db138d52f6431587f56698f121",
+                "url": "https://api.github.com/repos/igorw/get-in/zipball/170ded831f49abc6a6061f655aba9bdbcf7b8111",
+                "reference": "170ded831f49abc6a6061f655aba9bdbcf7b8111",
                 "shasum": ""
             },
             "require": {
@@ -41,8 +41,7 @@
             "authors": [
                 {
                     "name": "Igor Wiedler",
-                    "email": "igor@wiedler.ch",
-                    "homepage": "http://wiedler.ch/igor/"
+                    "email": "igor@wiedler.ch"
                 }
             ],
             "description": "Functions for for hash map (assoc array) traversal.",
@@ -50,7 +49,7 @@
                 "assoc-array",
                 "hash-map"
             ],
-            "time": "2014-01-08T02:24:41+00:00"
+            "time": "2014-12-15T23:03:51+00:00"
         },
         {
             "name": "joshdifabio/composed",
@@ -149,16 +148,16 @@
         },
         {
             "name": "wyrihaximus/get-in-packages-composer.jason",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-get-in-packages-composer.json.git",
-                "reference": "5d42230dcacd8f30c2d5cb3dc9ed0fafb79aaaa8"
+                "reference": "8f65f3297fb9cf00803141e6e8b8c0926bf93998"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-get-in-packages-composer.json/zipball/5d42230dcacd8f30c2d5cb3dc9ed0fafb79aaaa8",
-                "reference": "5d42230dcacd8f30c2d5cb3dc9ed0fafb79aaaa8",
+                "url": "https://api.github.com/repos/WyriHaximus/php-get-in-packages-composer.json/zipball/8f65f3297fb9cf00803141e6e8b8c0926bf93998",
+                "reference": "8f65f3297fb9cf00803141e6e8b8c0926bf93998",
                 "shasum": ""
             },
             "require": {
@@ -167,7 +166,7 @@
                 "php": "^7.2"
             },
             "require-dev": {
-                "api-clients/test-utilities": "^5.0"
+                "api-clients/test-utilities": "^5.4"
             },
             "type": "library",
             "autoload": {
@@ -187,7 +186,7 @@
                 }
             ],
             "description": "Functions around joshdifabio/composed and igorw/get-in to gather configuration from composer.json",
-            "time": "2018-06-19T20:43:13+00:00"
+            "time": "2019-01-01T21:52:30+00:00"
         }
     ],
     "packages-dev": [
