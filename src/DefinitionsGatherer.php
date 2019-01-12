@@ -10,8 +10,24 @@ final class DefinitionsGatherer
 
     public static function gather(string $location = self::LOCATION): iterable
     {
-        foreach (get_in_packages_composer_path($location) as $file) {
-            yield from require $file;
+        yield from self::requires(get_in_packages_composer_path($location));
+    }
+
+    private static function requires(iterable $files): iterable
+    {
+        foreach ($files as $file) {
+            yield from self::require($file);
         }
+    }
+
+    private static function require(string $file): iterable
+    {
+        if (\strpos($file, '*') !== false) {
+            yield from self::requires(\glob($file));
+
+            return;
+        }
+
+        yield from require $file;
     }
 }
