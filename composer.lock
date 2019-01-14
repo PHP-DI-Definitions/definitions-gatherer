@@ -102,16 +102,16 @@
         },
         {
             "name": "php-di-definitions/dummy",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-DI-Definitions/dummy.git",
-                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7"
+                "reference": "c42f65bef7872580805d8a2a5905376ebb78d651"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/e5e85f2796b6aebd94ae350b315220d7141ae3a7",
-                "reference": "e5e85f2796b6aebd94ae350b315220d7141ae3a7",
+                "url": "https://api.github.com/repos/PHP-DI-Definitions/dummy/zipball/c42f65bef7872580805d8a2a5905376ebb78d651",
+                "reference": "c42f65bef7872580805d8a2a5905376ebb78d651",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
             "extra": {
                 "php-di-definitions": {
                     "di": [
-                        "etc/di/dummy.php"
+                        "etc/di/*.php"
                     ]
                 }
             },
@@ -144,7 +144,7 @@
                 }
             ],
             "description": "Dummy definition for testing",
-            "time": "2018-07-10T06:18:55+00:00"
+            "time": "2019-01-12T17:12:23+00:00"
         },
         {
             "name": "wyrihaximus/get-in-packages-composer.jason",
