@@ -9,13 +9,13 @@
     }
   ],
   "require": {
-    "php": "^7.4",
+    "php": "^8 || ^7.4",
     "php-di-definitions/dummy": "^1.0",
     "thecodingmachine/safe": "^1.3",
     "wyrihaximus/get-in-packages-composer.jason": "^1.0"
   },
   "require-dev": {
-    "wyrihaximus/test-utilities": "^3.7.6"
+    "wyrihaximus/test-utilities": "^5 || ^3.7.6"
   },
   "autoload": {
     "psr-4": {
