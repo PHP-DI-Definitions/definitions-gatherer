@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace PHPDIDefinitions;
 
@@ -11,11 +13,14 @@ final class DefinitionsGathererTest extends TestCase
 {
     public function testDummy(): void
     {
-        $definitions = \iterator_to_array(DefinitionsGatherer::gather());
+        $definitions = [];
+        foreach (DefinitionsGatherer::gather() as $key => $value) {
+            $definitions[$key] = $value;
+        }
 
         self::assertCount(1, $definitions);
-        self::assertTrue(isset($definitions[Dummy::class]));
-        self::assertInternalType('callable', $definitions[Dummy::class]);
+        self::assertArrayHasKey(Dummy::class, $definitions);
+        self::assertIsCallable($definitions[Dummy::class]);
         self::assertInstanceOf(Dummy::class, $definitions[Dummy::class]());
     }
 }
