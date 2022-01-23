@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f7fd280c8af29a710cf57884aec071c",
+    "content-hash": "e2b5ca88c8115907697f7e6bdda96fb2",
     "packages": [
         {
             "name": "igorw/get-in",

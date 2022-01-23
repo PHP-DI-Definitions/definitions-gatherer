@@ -19,7 +19,7 @@ Gather definitions from files listed in `composer.json`.
 
 # Usage
 
-Lets say for a project we need [`react/event-loop`]() so we create a package that holds a definition file 
+Lets say for a project we need [`react/event-loop`]() so we create a package that holds a definition file
 (`etc/di/event-loop.php`) with the following contents:
 
 ```php
@@ -49,7 +49,7 @@ And reference to it with the following configuration in `composer.json`:
 }
 ```
 
-Then using this package you can get that definition (and others) and pass it PHP-DI (or another DI that supports 
+Then using this package you can get that definition (and others) and pass it PHP-DI (or another DI that supports
 the same format):
 
 ```php
