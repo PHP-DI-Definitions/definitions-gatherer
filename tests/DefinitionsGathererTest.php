@@ -2,16 +2,17 @@
 
 declare(strict_types=1);
 
-namespace PHPDIDefinitions;
+namespace PHPDIDefinitions\Tests;
 
-use PHPUnit\Framework\TestCase;
+use PHPDIDefinitions\DefinitionsGatherer;
+use PHPDIDefinitions\Dummy;
+use PHPUnit\Framework\Attributes\Test;
+use WyriHaximus\TestUtilities\TestCase;
 
-/**
- * @internal
- */
 final class DefinitionsGathererTest extends TestCase
 {
-    public function testDummy(): void
+    #[Test]
+    public function dummy(): void
     {
         $definitions = [];
         foreach (DefinitionsGatherer::gather() as $key => $value) {

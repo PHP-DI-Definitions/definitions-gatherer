@@ -4,17 +4,16 @@ declare(strict_types=1);
 
 namespace PHPDIDefinitions;
 
-use function Safe\glob;
+use function glob;
+use function is_array;
 use function strpos;
 use function WyriHaximus\get_in_packages_composer_path;
 
 final class DefinitionsGatherer
 {
-    private const LOCATION = 'extra.php-di-definitions.di';
+    private const string LOCATION = 'extra.php-di-definitions.di';
 
-    /**
-     * @return iterable<string, mixed>
-     */
+    /** @return iterable<string, mixed> */
     public static function gather(string $location = self::LOCATION): iterable
     {
         yield from self::requires(get_in_packages_composer_path($location));
@@ -23,7 +22,7 @@ final class DefinitionsGatherer
     /**
      * @param iterable<string> $files
      *
-     * @return iterable<string>
+     * @return iterable<string, mixed>
      */
     private static function requires(iterable $files): iterable
     {
@@ -32,23 +31,21 @@ final class DefinitionsGatherer
         }
     }
 
-    /**
-     * @return iterable<string, mixed>
-     */
+    /** @return iterable<string, mixed> */
     private static function require(string $file): iterable
     {
         if (strpos($file, '*') !== false) {
-            /**
-             * @psalm-suppress PossiblyInvalidArgument
-             */
-            yield from self::requires(glob($file));
+            $files = glob($file);
+            if (! is_array($files)) {
+                return;
+            }
+
+            yield from self::requires($files);
 
             return;
         }
 
-        /**
-         * @psalm-suppress UnresolvableInclude
-         */
+        /** @phpstan-ignore generator.keyType */
         yield from require $file;
     }
 }
