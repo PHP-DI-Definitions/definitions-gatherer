@@ -14,10 +14,10 @@ final class DefinitionsGathererTest extends TestCase
     #[Test]
     public function dummy(): void
     {
-        $definitions = [];
-        foreach (DefinitionsGatherer::gather() as $key => $value) {
-            $definitions[$key] = $value;
-        }
+        $definitionSources = [...DefinitionsGatherer::gather()];
+        self::assertCount(1, $definitionSources);
+
+        $definitions = $definitionSources[0]->getDefinitions();
 
         self::assertCount(1, $definitions);
         self::assertArrayHasKey(Dummy::class, $definitions);
