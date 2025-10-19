@@ -4,25 +4,28 @@ declare(strict_types=1);
 
 namespace PHPDIDefinitions;
 
+use DI\Definition\Source\DefinitionFile;
+use DI\Definition\Source\DefinitionSource;
+use WyriHaximus\GetInPackages;
+
 use function glob;
 use function is_array;
 use function strpos;
-use function WyriHaximus\get_in_packages_composer_path;
 
 final class DefinitionsGatherer
 {
     private const string LOCATION = 'extra.php-di-definitions.di';
 
-    /** @return iterable<string, mixed> */
+    /** @return iterable<DefinitionSource> */
     public static function gather(string $location = self::LOCATION): iterable
     {
-        yield from self::requires(get_in_packages_composer_path($location));
+        yield from self::requires(GetInPackages::composerPath($location));
     }
 
     /**
      * @param iterable<string> $files
      *
-     * @return iterable<string, mixed>
+     * @return iterable<DefinitionSource>
      */
     private static function requires(iterable $files): iterable
     {
@@ -31,7 +34,7 @@ final class DefinitionsGatherer
         }
     }
 
-    /** @return iterable<string, mixed> */
+    /** @return iterable<DefinitionSource> */
     private static function require(string $file): iterable
     {
         if (strpos($file, '*') !== false) {
@@ -45,7 +48,6 @@ final class DefinitionsGatherer
             return;
         }
 
-        /** @phpstan-ignore generator.keyType */
-        yield from require $file;
+        yield new DefinitionFile($file);
     }
 }

@@ -5,7 +5,6 @@
 [![Total Downloads](https://poser.pugx.org/php-di-definitions/definitions-gatherer/downloads.png)](https://packagist.org/packages/php-di-definitions/definitions-gatherer)
 [![Code Coverage](https://scrutinizer-ci.com/g/php-di-definitions/definitions-gatherer/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/php-di-definitions/definitions-gatherer/?branch=master)
 [![License](https://poser.pugx.org/php-di-definitions/definitions-gatherer/license.png)](https://packagist.org/packages/php-di-definitions/definitions-gatherer)
-[![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/reactphp-http-middleware-clear-body/badge.svg)](https://travis-ci.org/WyriHaximus/reactphp-http-middleware-clear-body)
 
 # Install
 
@@ -56,9 +55,9 @@ the same format):
 use DI\ContainerBuilder;
 use PHPDIDefinitions\DefinitionsGatherer;
 
-$definitions = iterator_to_array(DefinitionsGatherer::gather());
+
 $containerBuilder = new ContainerBuilder();
-$containerBuilder->addDefinitions($definitions);
+$containerBuilder->addDefinitions(...DefinitionsGatherer::gather());
 $container = $containerBuilder->build();
 ```
 
@@ -66,7 +65,7 @@ $container = $containerBuilder->build();
 
 The MIT License (MIT)
 
-Copyright (c) 2023 Cees-Jan Kiewiet
+Copyright (c) 2025 Cees-Jan Kiewiet
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
